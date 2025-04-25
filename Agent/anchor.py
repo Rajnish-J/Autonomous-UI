@@ -1,6 +1,6 @@
 import requests
 
-ANCHOR_API_KEY = "YOUR_ANCHOR_API_KEY"
+# ANCHOR_API_KEY = "YOUR_ANCHOR_API_KEY"
 
 response = requests.post(
     "https://api.anchorbrowser.io/v1/sessions",
@@ -10,10 +10,9 @@ response = requests.post(
     },
     json={
       "browser": {
-        "headless": {"active": False} # Use headless false to view the browser when combining with browser-use
+        "headless": {"active": False} 
       }
     }).json()
 
-# Access the data object from the response
 session_data = response["data"]
 print(session_data)
