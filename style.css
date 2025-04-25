@@ -1,0 +1,17 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  iframe {
+    border: 0px;
+    display: flex;
+    width: 50rem;
+    height: 50rem;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  
