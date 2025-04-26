@@ -1,7 +1,6 @@
 import os
 from langchain_google_genai import ChatGoogleGenerativeAI
 from browser_use import BrowserConfig, Browser, Agent
-from Agent.logging import add_log
 
 async def run_automation(cdp_url):
     google_api_key = os.getenv("GOOGLE_API_KEY")
@@ -17,5 +16,4 @@ async def run_automation(cdp_url):
     )
 
     result = await agent.run()
-    print("\n✅ Automation Task Result:\n", result)
-    add_log(f"✅ Automation Task Result: {result}")
+    return result
